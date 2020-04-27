@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+
+<head>
+
+  <title>hangul name</title>
+  <meta charset="utf-8">
+
+</head>
+
+<body>
+    
+  <h1><a href="hangul_main.html">hangul name</a></h1>
+
+
+
+    <form method="GET" action="/translation.py">
+
+        <label for="name">Hangul Name Making</label>
+        <br>
+        <!--이름 입력칸-->
+        <input type="text" id="name" name="en-name" placeholder="Enter your name" autofocus maxlength="8">
+
+        <br>
+
+        <!--전송 버튼-->
+        <input type="submit" value="Make">
+
+        <br>
+        <br>
+
+        <div>
+            <label for="char1"> 표시할 문자 </label>
+            <input type="text" name="char1">
+        </div>
+
+    </form>
+
+</body>
+
+</html>
