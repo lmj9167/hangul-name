@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+<head>
+<title>My_Hangul</title>
+<meta charset="utf-8"/>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript" src="javascript.js"></script>
+<link rel="stylesheet" href="stylesheet.css" type="text/css">
+
+
+</head>
+<body>
+<h1><a href="index2.py">My Hangul</a></h1>
+
+
+
+    <form action="create.py" method="get" target="param">
+
+        <label for="name">Hangul Name Making</label>
+        <br>
+        <!--이름 입력칸-->
+        <input type="text" name="ename" placeholder="Enter your name" autofocus maxlength="8">
+
+        <!--전송 버튼-->
+        <input type="submit" value="Make" onclick="make()">
+        <p>ex) jackson, aiden, lucas, liam, noah,
+          ethan, mason, caden, oliver, elijah</p>
+        <br>
+
+    </form>
+<iframe id="if" name="param" frameborder=0; width="100%"></iframe>
+
+<p></p>
+</body>
+</html>
