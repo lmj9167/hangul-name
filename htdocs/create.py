@@ -4,6 +4,9 @@ print()
 
 import cgi
 form = cgi.FieldStorage()
+# pageId = form["id"].value
+# print(pageId)
+# title = form["title"].value
 ename = "oliver, "+form['ename'].value
 # print(ename)
 
@@ -65,6 +68,8 @@ if 'oliver, ' in ename:
     with open('translate.txt','r',encoding='utf8') as f:
         kname = f.read()
     kname = kname.replace("올리버, ", "")
+#리다이렉팅 실패 ㅜ
+# print("Location: hangul_main?id="+title)
 print("영문이름: ", form['ename'].value)
 print("  / 한글이름: ", kname)
 print("  / 한글 글자수: ", len(kname))
